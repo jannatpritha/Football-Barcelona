@@ -2,14 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-/* Basic Section */
+/* Basic Style*/
 body{
     font-family: 'Roboto', sans-serif;
     margin-top: 0; 
 }
 
 
-/* Section 1 */
+/* Section 1  Style */
 
 .section1{
     width:100%;
@@ -21,6 +21,7 @@ body{
     
     font-weight: bold;
     font-size: 64px;
+    color: rgba(255, 255, 255, 0.877);
     position:absolute;
     top: 207px;
     left: 50px;
@@ -45,5 +46,38 @@ body{
     height: 438px;
     right: 143px;
     top: 153px;
+}
+
+
+
+/* Section 2 Style */
+
+.section2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.players{
+    width: 330px;
+    height: 474px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 5px 10px #888888;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.players img{
+
+    width: 300px;
+    height: 256px;
+}
+
+.players h3{
+     font-size:28px;
+}
+
+.players p{
+    font-size: 16px;
 }
 
