@@ -5,7 +5,7 @@
 /* Basic Style*/
 body{
     font-family: 'Roboto', sans-serif;
-    margin-top: 0; 
+    margin: 0;
 }
 
 
@@ -14,31 +14,35 @@ body{
 .section1{
     width:100%;
     height: 677px;
-    background-image: linear-gradient(#A50044, #004D98);   
+    background-image: linear-gradient(hsl(335, 84%, 20%), #082949);   
+    display: flex;
+    
 }
 
 .caption{
-    
-    font-weight: bold;
-    font-size: 64px;
+
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 5%;
+    padding-top: 10%;
+}
+.caption h1{
+    font-weight: 700;
+    font-size: 4em;
     color: rgba(255, 255, 255, 0.877);
-    position:absolute;
-    top: 207px;
-    left: 50px;
 }
 
-.section1 a{
+.caption a{
     
     text-decoration: none;
     color: white;
     background-image: linear-gradient(black,maroon);
     text-align: center;
     padding-top: 20px;
-    position: absolute;
-    width: 168px;
-    height: 44px;
-    left: 50px;
-    top: 464px;
+    width: 25%;
+    height:35px;
 }
 .section1 img{
     position: absolute;
@@ -46,6 +50,12 @@ body{
     height: 438px;
     right: 143px;
     top: 153px;
+    
+}
+
+.section1:hover img{
+    transition: transform 2s ease-out .7s ;
+    transform: rotate(-30deg);
 }
 
 
